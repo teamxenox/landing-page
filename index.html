@@ -62,12 +62,12 @@
       <!-- Navigation Menu Start -->
       <ul id="menu" class="nav-item">
         <li>
-          <a data-menuanchor="secondPage" href="#secondPage" class="navLink"
+          <a data-menuanchor="projects" href="#projects" class="navLink"
             >Projects</a
           >
         </li>
         <li>
-          <a data-menuanchor="4thpage" href="#4thpage" class="navLink altlink"
+          <a data-menuanchor="blog" href="#blog" class="navLink altlink"
             >Blog</a
           >
         </li>
@@ -84,11 +84,13 @@
       </a>
       <!-- Mobile Navigation Menu Start -->
       <div id="myLinks" class="mobile-link">
-        <a data-menuanchor="secondPage" href="#secondPage" class="a-link"
+        <a data-menuanchor="projects" href="#projects" class="a-link"
           >Projects</a
         >
-        <a data-menuanchor="4thPage" href="#4thPage" class="a-link">Blog</a>
-        <a data-menuanchor="3rdPage" href="#3rdPage" class="a-link">Join Us</a>
+        <a data-menuanchor="blog" href="#blog" class="a-link">Blog</a>
+        <a data-menuanchor="community" href="#community" class="a-link"
+          >Join Us</a
+        >
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
@@ -108,12 +110,10 @@
                 <p class="captionTitle glow">Team XenoX</p>
               </div>
               <p class="captionWord">Home of Open Source Heroes</p>
-              <p class="captionParagraph">
-                Come change the world with us
-              </p>
+              <p class="captionParagraph">Come change the world with us</p>
             </div>
             <!-- Scroll Arrow -->
-            <a data-menuanchor="secondPage" href="#secondPage">
+            <a data-menuanchor="projects" href="#projects">
               <img id="menu" class="arrow vert-move" src="img/Arrowtrans.png" />
             </a>
           </div>
@@ -141,9 +141,7 @@
                 <!-- Secttion 2 Caption End -->
                 <!-- Section 2 Button Start-->
                 <a target="_blank" href="https://github.com/teamxenox">
-                  <button class="blogButton">
-                    Explore Projects
-                  </button>
+                  <button class="blogButton">Explore Projects</button>
                 </a>
                 <!-- Section 2 Button End -->
               </div>
@@ -198,7 +196,11 @@
             <!-- Section 4 Caption End -->
             <!-- Section 4 'Read Blogs' Button Start -->
             <div class="altbtn">
-              <a target="_blank" href="https://dev.to/teamxenox">
+              <a
+                target="_blank"
+                href="https://xenox.dev/"
+                rel="noopener noreferrer"
+              >
                 <button class="blogButton">Read our Blogs</button>
               </a>
             </div>
@@ -219,18 +221,7 @@
             <div class="png">
               <img src="img/Group 1.svg" />
             </div>
-            <!-- DEV Icon -->
-            <a
-              class="dev-image"
-              target="_blank"
-              href="https://dev.to/teamxenox"
-            >
-              <img
-                class="devButton"
-                src="img/dev-badge.png"
-                alt="XenoX's DEV Profile"
-              />
-            </a>
+
             <!-- 'Become an Author' Button in Mobile Mode -->
             <div class="altbtn">
               <a
@@ -290,7 +281,7 @@
         keyboardScrolling: true,
         verticalCentered: true,
         navigationTooltips: ["Home", "Projects", "Community", "Blog"],
-        anchors: ["firstPage", "secondPage", "3rdPage", "4thPage"],
+        anchors: ["home", "projects", "community", "blog"],
         menu: "#menu",
         css3: true,
         fitToSection: true,
